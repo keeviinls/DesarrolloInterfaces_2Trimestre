@@ -9,11 +9,11 @@ public class Notas_Principal {
     private JScrollPane jscrollpane;
     private JLabel label_titulo;
     private JPanel panel_botones;
-    private JButton btn_crear;
     private JButton btn_modificar;
     private JButton btn_eliminar;
     private JPanel mainpanel;
     private JLabel label_foto;
+    private JButton btn_crear;
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Notas_Principal");
