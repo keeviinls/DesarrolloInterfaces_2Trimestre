@@ -35,7 +35,6 @@ public class Notas_Principal {
         crear_tabla();
         configuracion_botones();
 
-
     }
 
 
@@ -87,6 +86,26 @@ public class Notas_Principal {
             }
         });
 
+        btn_modificar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int seleccionar_fila = tabla.getSelectedRow();
+
+                if (seleccionar_fila >= 0){
+                    String nombre = (String) tabla.getValueAt(seleccionar_fila, 0);
+                    String apellidos = (String) tabla.getValueAt(seleccionar_fila, 1);
+                    String nota = (String) tabla.getValueAt(seleccionar_fila, 2);
+
+                    ventana_modificar vent_modificar = new ventana_modificar();
+                    vent_modificar.mostrarVentana(Notas_Principal.this, nombre, apellidos, nota);
+                }
+                else {
+                    JOptionPane.showMessageDialog(null, "Por favor, seleccione una fila para modificar.", "Error", JOptionPane.ERROR_MESSAGE);
+
+                }
+            }
+        });
+
         tabla.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent e) {
@@ -125,6 +144,10 @@ public class Notas_Principal {
         // Añade una nueva fila a la tabla con los datos proporcionados
         String[] fila = {nombre, apellido, nota};
         model.addRow(fila);
+    }
+
+    public JTable getTable() {
+        return tabla;
     }
 
 

@@ -70,7 +70,7 @@
                   <gridbag weightx="1.0" weighty="1.0"/>
                 </constraints>
                 <properties>
-                  <font size="14" style="1"/>
+                  <font name="Arial" size="14" style="1"/>
                   <foreground color="-1"/>
                   <text value="Organiza tus ideas con facilidad: Guarda y gestiona tus notas en nuestra intuitiva tabla."/>
                 </properties>
@@ -81,7 +81,7 @@
                   <gridbag weightx="1.0" weighty="1.0"/>
                 </constraints>
                 <properties>
-                  <font size="14" style="1"/>
+                  <font name="Arial" size="14" style="1"/>
                   <foreground color="-1"/>
                   <text value=" ¡Explora la eficacia de tomar apuntes con un solo clic, justo debajo de tus botones principales!"/>
                 </properties>

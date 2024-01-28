@@ -1,13 +1,224 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Aplicacion_Notas.Controlador.ventana_modificar">
-  <grid id="27dc6" row-count="1" column-count="1" layout-manager="GridLayoutManager">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="mainpanel_modificar" layout-manager="GridBagLayout">
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
-      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+      <xy x="20" y="20" width="741" height="612"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-15841206"/>
+      <enabled value="false"/>
+    </properties>
     <border type="none"/>
-    <children/>
+    <children>
+      <grid id="24598" binding="panelarriba" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="a05ce" binding="panel_titulo" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag top="20" left="0" bottom="20" right="0" weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <enabled value="false"/>
+              <opaque value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="fe8e2" class="javax.swing.JLabel" binding="label_titulo">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <font name="Copperplate Gothic Bold" size="48" style="1"/>
+                  <foreground color="-15841206"/>
+                  <text value="MODIFICAR NOTA"/>
+                </properties>
+              </component>
+              <component id="4cbc3" class="javax.swing.JLabel" binding="label_texto">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="14" style="1"/>
+                  <foreground color="-15841206"/>
+                  <text value="Debes rellenar el siguiente formulario para modificar la nota seleccionada."/>
+                </properties>
+              </component>
+              <component id="9329a" class="javax.swing.JLabel" binding="label_foto">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <icon value="Aplicacion_Notas/Fotos/logo_verde_pequeno.png"/>
+                  <iconTextGap value="2"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="9e242" binding="panel_formulario" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag top="20" left="50" bottom="0" right="50" weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <background color="-15841206"/>
+          <enabled value="true"/>
+        </properties>
+        <border type="line" title="Nueva Nota" title-justification="1">
+          <font name="Arial" style="1"/>
+          <title-color color="-610442"/>
+          <color color="-1"/>
+        </border>
+        <children>
+          <component id="1204e" class="javax.swing.JLabel" binding="label_apellido">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <font name="Arial" size="16" style="1"/>
+              <foreground color="-1"/>
+              <text value="Apellido*"/>
+            </properties>
+          </component>
+          <component id="9c772" class="javax.swing.JLabel" binding="label_nota">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <font name="Arial" size="16" style="1"/>
+              <foreground color="-1"/>
+              <text value="Nota*"/>
+            </properties>
+          </component>
+          <component id="c31dd" class="javax.swing.JLabel" binding="label_nombre">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <font name="Arial" size="16" style="1"/>
+              <foreground color="-1"/>
+              <text value="Nombre*"/>
+            </properties>
+          </component>
+          <component id="730b2" class="javax.swing.JTextField" binding="textField_nombre">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="-1"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <autoscrolls value="true"/>
+              <background color="-525832"/>
+              <caretColor color="-15841206"/>
+              <columns value="0"/>
+              <editable value="true"/>
+              <font name="Arial" size="16"/>
+              <foreground color="-15841206"/>
+              <horizontalAlignment value="10"/>
+              <opaque value="true"/>
+              <toolTipText value=""/>
+              <verifyInputWhenFocusTarget value="true"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="10b57" class="javax.swing.JTextField" binding="textField_nota">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="-1"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <background color="-525832"/>
+              <font name="Arial" size="16"/>
+              <foreground color="-15841206"/>
+            </properties>
+          </component>
+          <component id="88eeb" class="javax.swing.JTextField" binding="textField_apellido">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="-1"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <background color="-525832"/>
+              <font name="Arial" size="16"/>
+              <foreground color="-15841206"/>
+            </properties>
+          </component>
+          <component id="576cf" class="javax.swing.JButton" binding="btn_nuevo">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="0" left="0" bottom="0" right="30" weightx="1.0" weighty="1.0" ipadx="30"/>
+            </constraints>
+            <properties>
+              <autoscrolls value="true"/>
+              <background color="-1"/>
+              <font name="Arial" size="16" style="1"/>
+              <foreground color="-15841206"/>
+              <text value="Nuevo"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="d86c0" binding="panel_botones" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <background color="-15841206"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="cbeaa" class="javax.swing.JButton" binding="boton_aceptar">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="0" left="0" bottom="0" right="30" weightx="1.0" weighty="1.0" ipadx="30"/>
+            </constraints>
+            <properties>
+              <autoscrolls value="true"/>
+              <background color="-1"/>
+              <font name="Arial" size="16" style="1"/>
+              <foreground color="-15841206"/>
+              <text value="Aceptar"/>
+            </properties>
+          </component>
+          <component id="124bd" class="javax.swing.JButton" binding="boton_cancelar">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="0" left="30" bottom="0" right="0" weightx="1.0" weighty="1.0" ipadx="30"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <font name="Arial" size="16" style="1"/>
+              <foreground color="-15841206"/>
+              <text value="Cancelar"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
   </grid>
 </form>
