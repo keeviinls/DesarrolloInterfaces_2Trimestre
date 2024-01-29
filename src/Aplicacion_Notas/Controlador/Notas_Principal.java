@@ -21,15 +21,14 @@ public class Notas_Principal {
     private JPanel mainpanel;
     private JLabel label_foto;
     private JButton btn_crear;
+    public static Nota nota_seleccionada =null;
     private JLabel label_descripcion;
     private JLabel label_descripcion_dos;
     private JPanel panel_arriba;
     private JButton btn_ver_nota;
     private JButton btn_ayuda;
-
     private DefaultTableModel model;
 
-    public static Nota nota_seleccionada =null;
 
     public Notas_Principal(){
         model = new DefaultTableModel();
@@ -45,7 +44,6 @@ public class Notas_Principal {
                 ventanaNota.mostrarVentana(Notas_Principal.this);
             }
         });
-
         btn_ver_nota.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -59,7 +57,6 @@ public class Notas_Principal {
 
                 ver_Nota ver_nota = new ver_Nota();
                 ver_nota.mostrarVentana(Notas_Principal.this);
-
             }
         });
 
@@ -107,7 +104,7 @@ public class Notas_Principal {
         btn_ayuda.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Este programa esta diseñado para almacenar notas que los usuarios vayan creando, para comenzar a crear una deberan pulsar el boton Crear", "Error", JOptionPane.PLAIN_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Este programa esta diseñado para almacenar notas que los usuarios vayan creando, para comenzar a crear una deberán pulsar el boton Crear", "Ayuda", JOptionPane.PLAIN_MESSAGE);
 
             }
         });
@@ -128,8 +125,6 @@ public class Notas_Principal {
                 }
             }
         });
-
-
     }
 
     private void crear_tabla() {
@@ -143,20 +138,14 @@ public class Notas_Principal {
         model.addColumn("Apellidos");
         model.addColumn("Nota");
         tabla.setModel(model);
-
     }
-
-    public void agregarFila(String nombre, String apellido, String nota) {
-        // Añade una nueva fila a la tabla con los datos proporcionados
-        String[] fila = {nombre, apellido, nota};
-        model.addRow(fila);
-    }
-
     public JTable getTable() {
         return tabla;
     }
-
-
+    public void agregarFila(String nombre, String apellido, String nota) {
+        String[] fila = {nombre, apellido, nota};
+        model.addRow(fila);
+    }
     public static void main(String[] args) {
         JFrame frame = new JFrame("Notas_Principal");
         frame.setContentPane(new Notas_Principal().mainpanel);

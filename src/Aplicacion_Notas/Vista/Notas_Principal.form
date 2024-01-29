@@ -34,8 +34,11 @@
               <component id="cf2c6" class="javax.swing.JTable" binding="tabla">
                 <constraints/>
                 <properties>
-                  <background color="-15841206"/>
-                  <foreground color="-1"/>
+                  <background color="-1"/>
+                  <foreground color="-15841206"/>
+                  <gridColor color="-742031"/>
+                  <selectionBackground color="-15841206"/>
+                  <selectionForeground color="-7"/>
                 </properties>
               </component>
             </children>
