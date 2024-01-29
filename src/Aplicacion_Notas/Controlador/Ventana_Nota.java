@@ -40,29 +40,26 @@ public class Ventana_Nota extends Component {
     }
 
     public void mostrarVentana(final Notas_Principal notasPrincipal) {
-        // Crea un nuevo JFrame para mostrar la ventana
+
         JFrame frame = new JFrame("Ventana_Nota");
         frame.setContentPane(main_panel_ventana);
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Cierra solo esta ventana al cerrarla
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
-        frame.setBounds(0,0,500,650);
+        frame.setBounds(0,0,550,650);
 
 
-        // Agrega un ActionListener al botón_aceptar
         boton_aceptar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Obtiene los datos de los JTextField
+
                 String nombre = textField_nombre.getText();
                 String apellido = textField_apellido.getText();
                 String nota = textField_nota.getText();
 
                 if (!textField_nombre.getText().isEmpty() && !textField_apellido.getText().isEmpty() && !textField_nota.getText().isEmpty()){
-                    // Llama al método agregarFila de Notas_Principal para agregar la nueva fila
                     notasPrincipal.agregarFila(nombre, apellido, nota);
 
-                    // Cierra la ventana
                     frame.dispose();
                 } else {
                     JOptionPane.showMessageDialog(null, "Para poder crear una nueva nota debes de rellenar todos los campos", "Rellena todo los campos", JOptionPane.ERROR_MESSAGE);

@@ -25,6 +25,7 @@ public class Notas_Principal {
     private JLabel label_descripcion_dos;
     private JPanel panel_arriba;
     private JButton btn_ver_nota;
+    private JButton btn_ayuda;
 
     private DefaultTableModel model;
 
@@ -34,10 +35,7 @@ public class Notas_Principal {
         model = new DefaultTableModel();
         crear_tabla();
         configuracion_botones();
-
     }
-
-
 
     private void configuracion_botones() {
         btn_crear.addActionListener(new ActionListener() {
@@ -71,14 +69,14 @@ public class Notas_Principal {
                 int seleccionar_fila = tabla.getSelectedRow();
 
                 if (seleccionar_fila >= 0) {
-                    int opcion = JOptionPane.showConfirmDialog(null, "¿Estás seguro de que deseas eliminar la nota?", "Confirmar eliminación", JOptionPane.YES_NO_OPTION);
+                    int opcion = JOptionPane.showConfirmDialog(null, "¿Seguro que quieres eliminar esta nota?", "Confirmar eliminación", JOptionPane.YES_NO_OPTION);
 
                     if (opcion == JOptionPane.YES_OPTION) {
                         DefaultTableModel model = (DefaultTableModel) tabla.getModel();
                         model.removeRow(seleccionar_fila);
-                        JOptionPane.showMessageDialog(null, "Nota eliminada exitosamente.", "Eliminación exitosa", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Nota eliminada correctamente.", "Eliminación correcta", JOptionPane.INFORMATION_MESSAGE);
                     } else {
-                        // No hacer nada si se selecciona "No"
+
                     }
                 } else {
                     JOptionPane.showMessageDialog(null, "Por favor, seleccione una fila para eliminar.", "Error", JOptionPane.ERROR_MESSAGE);
@@ -100,9 +98,17 @@ public class Notas_Principal {
                     vent_modificar.mostrarVentana(Notas_Principal.this, nombre, apellidos, nota);
                 }
                 else {
-                    JOptionPane.showMessageDialog(null, "Por favor, seleccione una fila para modificar.", "Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Por favor, seleccione una fila para modificar.", "Ayuda", JOptionPane.ERROR_MESSAGE);
 
                 }
+            }
+        });
+
+        btn_ayuda.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, "Este programa esta diseñado para almacenar notas que los usuarios vayan creando, para comenzar a crear una deberan pulsar el boton Crear", "Error", JOptionPane.PLAIN_MESSAGE);
+
             }
         });
 
@@ -157,7 +163,7 @@ public class Notas_Principal {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
-        frame.setBounds(0,0,800,650);
+        frame.setBounds(0,0,750,700);
 
     }
 }

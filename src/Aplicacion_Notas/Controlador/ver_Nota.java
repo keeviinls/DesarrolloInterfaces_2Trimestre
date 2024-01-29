@@ -24,7 +24,7 @@ public class ver_Nota extends JFrame{
     private JLabel label_nota_ver;
 
     public ver_Nota() {
-        // Configura los labels con la información de la nota seleccionada
+
         label_nombre_ver.setText(nota_seleccionada.getNombre());
         label_apellido_ver.setText(nota_seleccionada.getApellidos());
         label_nota_ver.setText(nota_seleccionada.getNota_completa());
@@ -34,10 +34,10 @@ public class ver_Nota extends JFrame{
     public void mostrarVentana(final Notas_Principal notasPrincipal){
         JFrame frame = new JFrame("Ver Nota");
         frame.setContentPane(mainpanel);
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Cierra solo esta ventana al cerrarla
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
-        frame.setBounds(0,0,500,650);
+        frame.setBounds(0,0,750,600);
 
         boton_salir.addActionListener(new ActionListener() {
             @Override

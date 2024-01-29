@@ -10,10 +10,7 @@ public class Nota {
         this.apellidos = apellidos;
         this.nota_completa = nota_completa;
     }
-
-    public Nota() {
-
-    }
+    public Nota() {}
 
     public String getNombre() {
         return nombre;

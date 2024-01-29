@@ -44,18 +44,14 @@ public class ventana_modificar extends Component {
         // Crea un nuevo JFrame para mostrar la ventana
         JFrame frame = new JFrame("Ventana_Modificar");
         frame.setContentPane(mainpanel_modificar);
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Cierra solo esta ventana al cerrarla
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
-        frame.setBounds(0,0,500,650);
+        frame.setBounds(0,0,550,650);
 
-        // Poner datos en los textfields
         textField_nombre.setText(nombre);
         textField_apellido.setText(apellidos);
         textField_nota.setText(nota);
-
-
-        // Agrega un ActionListener al botón_aceptar
         boton_aceptar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -65,19 +61,16 @@ public class ventana_modificar extends Component {
                 String nota = textField_nota.getText();
 
                 if (!textField_nombre.getText().isEmpty() && !textField_apellido.getText().isEmpty() && !textField_nota.getText().isEmpty()){
-                    // Llama al método agregarFila de Notas_Principal para agregar la nueva fila
                     nuevo_nombre = textField_nombre.getText();
                     nuevo_apellido = textField_apellido.getText();
                     nuevo_nota = textField_nota.getText();
 
-                    // Agregar los nuevos nombres, apellido, nota a la fila seleccionada.
                     int seleccionar_fila = notasPrincipal.getTable().getSelectedRow();
                     notasPrincipal.getTable().setValueAt(nuevo_nombre, seleccionar_fila, 0);
                     notasPrincipal.getTable().setValueAt(nuevo_apellido, seleccionar_fila, 1);
                     notasPrincipal.getTable().setValueAt(nuevo_nota, seleccionar_fila, 2);
 
 
-                    // Cierra la ventana
                     frame.dispose();
                 } else {
                     JOptionPane.showMessageDialog(null, "Para poder modificar la nota debes de rellenar todos los campos", "Rellena todo los campos", JOptionPane.ERROR_MESSAGE);
