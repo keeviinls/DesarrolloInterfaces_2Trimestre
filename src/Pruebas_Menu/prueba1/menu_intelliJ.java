@@ -38,6 +38,8 @@ public class menu_intelliJ {
     private JMenuItem item_print;
     private JMenuItem item_power_save;
     private JMenuItem item_exit;
+    private JPanel panel_fondo_menu;
+    private JPanel panel_arriba;
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("menu_intelliJ");
