@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="EditorImagenes.Controlador.MenuPrueba">
+  <grid id="27dc6" binding="mainpanel" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="1183" height="669"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="43b2f" binding="panel_izq" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-14803891"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="8566d" binding="panel_menu" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="15" left="10" bottom="0" right="10"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-15527630"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="d142a" class="javax.swing.JMenuBar" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="30" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15593167"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="5508e" class="javax.swing.JMenu" binding="jmenu_archivo" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-15593167"/>
+                      <font size="18"/>
+                      <foreground color="-1"/>
+                      <text value="Archivo"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="2bd9c" class="javax.swing.JMenuItem" binding="item_abrir">
+                        <constraints/>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-16251112"/>
+                          <text value="Abrir"/>
+                        </properties>
+                      </component>
+                      <component id="39d4c" class="javax.swing.JMenuItem" binding="item_guardar">
+                        <constraints/>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-16251112"/>
+                          <text value="Guardar"/>
+                        </properties>
+                      </component>
+                      <component id="2a5d" class="javax.swing.JMenuItem" binding="item_cerrar">
+                        <constraints/>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-16251112"/>
+                          <text value="Cerrar"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="6f1d7" class="javax.swing.JMenu" binding="jmenu_efectos" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-15593167"/>
+                      <font size="18"/>
+                      <foreground color="-1"/>
+                      <text value="Efectos"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="8ef33" class="javax.swing.JMenuItem" binding="item_byn">
+                        <constraints/>
+                        <properties>
+                          <font size="16"/>
+                          <foreground color="-16251112"/>
+                          <text value="Blanco y Negro"/>
+                        </properties>
+                      </component>
+                      <component id="e732e" class="javax.swing.JMenuItem" binding="item_grises">
+                        <constraints/>
+                        <properties>
+                          <font size="16"/>
+                          <foreground color="-16251112"/>
+                          <selected value="false"/>
+                          <text value="Grises"/>
+                        </properties>
+                      </component>
+                      <component id="3d1d6" class="javax.swing.JMenuItem" binding="item_sepia">
+                        <constraints/>
+                        <properties>
+                          <font size="16"/>
+                          <foreground color="-16251112"/>
+                          <text value="Sepia"/>
+                        </properties>
+                      </component>
+                      <component id="9302b" class="javax.swing.JMenuItem" binding="item_altocontraste">
+                        <constraints/>
+                        <properties>
+                          <font size="16"/>
+                          <foreground color="-16251112"/>
+                          <text value="Alto Contraste"/>
+                        </properties>
+                      </component>
+                      <component id="f654" class="javax.swing.JMenuItem" binding="item_pixelada">
+                        <constraints/>
+                        <properties>
+                          <font size="16"/>
+                          <foreground color="-16251112"/>
+                          <text value="Pixelada"/>
+                        </properties>
+                      </component>
+                      <component id="4753" class="javax.swing.JMenuItem" binding="item_icono">
+                        <constraints/>
+                        <properties>
+                          <font size="16"/>
+                          <foreground color="-16251112"/>
+                          <text value="Icono"/>
+                        </properties>
+                      </component>
+                      <component id="4e19f" class="javax.swing.JMenuItem" binding="item_bajaResolucion">
+                        <constraints/>
+                        <properties>
+                          <font size="16"/>
+                          <foreground color="-16251112"/>
+                          <text value="Baja Resolucion"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <component id="89239" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="EditorImagenes/Fotos/logo_imagen.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="727b8" binding="panel_medio" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="20" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14803891"/>
+            </properties>
+            <border type="none">
+              <title-color color="-4473925"/>
+            </border>
+            <children>
+              <grid id="419ed" binding="panel_imagen_uno" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="20" left="10" bottom="10" right="10"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <opaque value="false"/>
+                </properties>
+                <border type="line">
+                  <color color="-9676585"/>
+                </border>
+                <children>
+                  <component id="876d0" class="javax.swing.JLabel" binding="imagen_uno">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <icon value="EditorImagenes/Fotos/labrador_peq.jpg"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <grid id="56c03" binding="panel_texto_imagen_uno" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="30"/>
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="bb2ac" class="javax.swing.JLabel" binding="nombre_imagen_uno">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="18" style="1"/>
+                          <foreground color="-1"/>
+                          <opaque value="false"/>
+                          <text value="Imagen Costa Brava"/>
+                        </properties>
+                      </component>
+                      <component id="1a1dd" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-8355702"/>
+                          <text value="Medidas de la imagen"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <component id="3b1a5" class="javax.swing.JButton" binding="boton_convertir">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-9676585"/>
+                  <font name="Arial" size="20" style="1"/>
+                  <foreground color="-1"/>
+                  <text value="Convertir"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="d9a6f" binding="panel_foto_grande" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="20" left="20" bottom="20" right="20"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <background color="-16251112"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="d47c3" binding="panel_imagen_final" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16251112"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="a2660" class="javax.swing.JLabel" binding="imagen_final">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="EditorImagenes/Fotos/perro_grande.jpg"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="8a7d0" class="javax.swing.JLabel" binding="nombre_imagen_final">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Arial" size="22" style="1"/>
+              <foreground color="-1"/>
+              <text value="labrador_cachorro.jpg"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="50109" binding="panel_barra" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-15593167"/>
+        </properties>
+        <border type="line" title="Parámetros">
+          <font size="16" style="1"/>
+          <title-color color="-1"/>
+          <color color="-9676585"/>
+        </border>
+        <children>
+          <grid id="a21f8" binding="panel_primer_parametro" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="20" left="20" bottom="20" right="20"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-15527630"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="c4a65" class="javax.swing.JSlider" binding="slider1" default-binding="true">
+                <constraints>
+                  <grid row="1" column="0" row-span="2" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15527630"/>
+                  <foreground color="-153336"/>
+                </properties>
+              </component>
+              <component id="239ec" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <foreground color="-1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="a955a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <foreground color="-1"/>
+                  <text value="100"/>
+                </properties>
+              </component>
+              <component id="6d9f5" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <foreground color="-1"/>
+                  <text value="NIVEL"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
