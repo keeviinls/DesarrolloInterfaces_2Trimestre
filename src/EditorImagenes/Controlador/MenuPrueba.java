@@ -1,6 +1,8 @@
 package EditorImagenes.Controlador;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class MenuPrueba {
     private JPanel mainpanel;
@@ -32,6 +34,34 @@ public class MenuPrueba {
     private JPanel panel_primer_parametro;
     private JSlider slider1;
 
+    public MenuPrueba(){
+
+        item_cerrar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+
+        item_abrir.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFileChooser fileChooser = new JFileChooser();
+                int returnValue = fileChooser.showOpenDialog(null);
+
+                if (returnValue == JFileChooser.APPROVE_OPTION) {
+                    JOptionPane.showMessageDialog(null, "Archivo seleccionado: " + fileChooser.getSelectedFile().getAbsolutePath());
+                }
+
+                String path_imagen_origen = fileChooser.getSelectedFile().getPath();
+                ImageIcon icono = new ImageIcon(path_imagen_origen);
+                imagen_uno.setIcon(icono);
+
+            }
+        });
+
+    }
+
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("MenuPrueba");
@@ -39,5 +69,6 @@ public class MenuPrueba {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+        frame.setBounds(0,0,1200,800);
     }
 }
