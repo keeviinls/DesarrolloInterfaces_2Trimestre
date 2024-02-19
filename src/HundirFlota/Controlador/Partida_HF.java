@@ -2,7 +2,7 @@ package HundirFlota.Controlador;
 
 import javax.swing.*;
 
-public class Partida_HF {
+public class Partida_HF extends JFrame{
     private JPanel mainpanel;
     private JPanel panel_central;
     private JPanel panel_titulo;
@@ -33,4 +33,13 @@ public class Partida_HF {
     private JPanel panel_numeros;
     private JPanel tabla_barco;
     private JPanel barco_uno;
+
+    public void mostrarVentana(final Elegir_Personaje elegir_personaje){
+        JFrame frame = new JFrame("Inicio Partida");
+        frame.setContentPane(mainpanel);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+        frame.setBounds(0,0,1280,680);
+    }
 }

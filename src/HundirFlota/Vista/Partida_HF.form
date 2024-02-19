@@ -12,7 +12,9 @@
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-1644826"/>
+        </properties>
         <border type="none"/>
         <children>
           <grid id="5b252" binding="panel_izq" layout-manager="GridBagLayout">
@@ -20,7 +22,9 @@
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
               <gridbag top="0" left="20" bottom="0" right="0" weightx="1.0" weighty="1.0"/>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-2307151"/>
+            </properties>
             <border type="none"/>
             <children>
               <component id="fce94" class="javax.swing.JLabel" binding="foto_jugador1">
@@ -40,7 +44,9 @@
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                   <gridbag top="0" left="20" bottom="0" right="0" weightx="1.0" weighty="1.0"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <background color="-2307151"/>
+                </properties>
                 <border type="none"/>
                 <children>
                   <component id="3ad5b" class="javax.swing.JLabel" binding="nombre_jugador1">
@@ -50,6 +56,7 @@
                     </constraints>
                     <properties>
                       <font name="Arial" size="20" style="1"/>
+                      <foreground color="-14999516"/>
                       <text value="Kevin Loayza"/>
                     </properties>
                   </component>
@@ -62,7 +69,9 @@
               <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
               <gridbag top="0" left="0" bottom="0" right="20" weightx="1.0" weighty="1.0"/>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-14999516"/>
+            </properties>
             <border type="none"/>
             <children>
               <grid id="e502" binding="panel_nombre_jugador2" layout-manager="GridBagLayout">
@@ -70,7 +79,9 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                   <gridbag top="0" left="0" bottom="0" right="20" weightx="1.0" weighty="1.0"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <background color="-14999516"/>
+                </properties>
                 <border type="none"/>
                 <children>
                   <component id="2e0f3" class="javax.swing.JLabel">
@@ -80,7 +91,8 @@
                     </constraints>
                     <properties>
                       <font name="Arial" size="20" style="1"/>
-                      <text value="Kevin Loayza"/>
+                      <foreground color="-2307151"/>
+                      <text value="Jonathan Carreño"/>
                     </properties>
                   </component>
                 </children>

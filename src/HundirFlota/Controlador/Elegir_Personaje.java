@@ -31,5 +31,31 @@ public class Elegir_Personaje extends JFrame{
         frame.pack();
         frame.setVisible(true);
         frame.setBounds(0,0,495,590);
+
+        boton_iniciar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                Partida_HF partida_hf = new Partida_HF();
+                partida_hf.mostrarVentana(Elegir_Personaje.this);
+                frame.dispose();
+
+
+            }
+        });
+
+        boton_salir.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frame.dispose();
+            }
+        });
     }
+
+    public Elegir_Personaje() {
+
+
+    }
+
+
 }
