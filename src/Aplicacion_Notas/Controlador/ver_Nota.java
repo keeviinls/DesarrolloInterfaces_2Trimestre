@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import static Aplicacion_Notas.Controlador.Notas_Principal.nota_seleccionada;
+
 public class ver_Nota extends JFrame{
     public JPanel mainpanel;
     private JPanel panelarriba;

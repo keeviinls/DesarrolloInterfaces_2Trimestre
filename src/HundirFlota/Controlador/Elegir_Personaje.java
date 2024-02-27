@@ -23,6 +23,7 @@ public class Elegir_Personaje extends JFrame{
     private JPanel panel_botones;
     private JButton boton_iniciar;
     private JButton boton_salir;
+    private JLabel foto_jugador_2;
 
     public void mostrarVentana(final Menu_Inicio_HF menu_inicio_hf){
         JFrame frame = new JFrame("Elegir Personaje");

@@ -131,7 +131,7 @@
                       <text value="Jugador 2"/>
                     </properties>
                   </component>
-                  <component id="5788d" class="javax.swing.JLabel">
+                  <component id="5788d" class="javax.swing.JLabel" binding="foto_jugador_2">
                     <constraints>
                       <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                       <gridbag top="10" left="0" bottom="0" right="0" weightx="1.0" weighty="1.0"/>
