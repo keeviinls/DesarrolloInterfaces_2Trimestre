@@ -15,8 +15,6 @@ public class EditorImagenPracticar_Ver extends JFrame {
 
     public EditorImagenPracticar_Ver(){
         label_nombre_imagen.setText(imagen_seleccionada.getNombre());
-
-
         ImageIcon icono = new ImageIcon(imagen_seleccionada.getImagen());
         imagen_ver.setIcon(icono);
 
